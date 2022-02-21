@@ -9,7 +9,7 @@ def encrypt(text,s):
  
         
         if (char.isupper()):
-            result += chr((ord(char) + s-65) % 26 + 66)
+            result += chr((ord(char) + s-65) % 26 + 65)
         elif char.isdigit():
             result+=str((ord(char)+ s-48))    
  
