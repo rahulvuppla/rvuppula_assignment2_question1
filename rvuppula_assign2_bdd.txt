@@ -1,0 +1,7 @@
+User story:
+As a cryptographer, I need to check whether my test cases for encryption and decryption functions are working fine or not
+BDD:
+Scenario: cryptographer wants to encrypt and decrypt given string
+Given [encrypt and decrypt functions] 
+When [user inputs a [encrypt|decrypt] string and key for ceaser cipher in command line arguments] 
+Then [the output should contain the encrypted or decrypted string]
