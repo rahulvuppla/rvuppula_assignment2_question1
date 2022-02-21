@@ -39,7 +39,7 @@ def decrypt(text,s):
  
         
         elif char.isdigit():
-            result+=str((ord(char)- s-48))
+            result+=str((ord(char)- s-49))
         elif char.islower():
             result += chr((ord(char)  - s- 97) % 26 + 97)
         else:
@@ -57,6 +57,6 @@ class firsttest(unittest.TestCase):
     def test_decrypt(self):
         assert decrypt('23456',1)=='12345'        
 x= firsttest()
-x.test_encrypt() 
+x.test_decrypt() 
 
    
