@@ -39,7 +39,7 @@ def decrypt(text,s):
  
         
         elif char.isdigit():
-            result+=str((ord(char)- s-49))
+            result+=str((ord(char)- s-48))
         elif char.islower():
             result += chr((ord(char)  - s- 97) % 26 + 97)
         else:
