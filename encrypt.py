@@ -48,7 +48,10 @@ def decrypt(text,s):
             
  
     return result   
-
+if sys.argv[1]=='encrypt':    
+    print(encrypt(sys.argv[2],int(sys.argv[3])))
+elif sys.argv[1]=='decrypt':
+    print(decrypt(sys.argv[2],int(sys.argv[3])))
 class firsttest(unittest.TestCase):
  
     def test_encrypt(self):
